@@ -19,6 +19,7 @@ zmodload zsh/complist
 compinit
 
 # Aliases:
+alias vim="nvim"
 alias ls="exa --icons"
 alias grep="rg"
 
