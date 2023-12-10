@@ -1,10 +1,9 @@
-echo -e "\e]12;white\a"
 # pfetch to flex
 pfetch
 
 # Colors and prompt:
 autoload -U colors && colors
-PROMPT='%B%F{cyan}%~ %F{green}> '
+PROMPT='%B%F{cyan}%~ %F{green}$ '
 
 # Save history in cache directory:
 HISTSIZE=1000
@@ -24,7 +23,7 @@ compinit
 
 # Aliases:
 alias vim="nvim"
-alias ls="eza -a --color=always --group-directories-first --icons"
+alias ls="eza -a --color=always --group-directories-first --icons --git"
 alias grep="rg"
 
 # Jump between words with ctrl arrows keys
