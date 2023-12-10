@@ -1,6 +1,10 @@
+echo -e "\e]12;white\a"
+# pfetch to flex
+pfetch
+
 # Colors and prompt:
 autoload -U colors && colors
-PROMPT=$'%F{blue}┌[%F{yellow}%n%F{green}@%F{blue}%m%F{blue}]-[%F{cyan}%~%F{blue}]\n└─%F{green}$%f '
+PROMPT='%B%F{cyan}%~ %F{green}> '
 
 # Save history in cache directory:
 HISTSIZE=1000
@@ -20,7 +24,7 @@ compinit
 
 # Aliases:
 alias vim="nvim"
-alias ls="exa --icons"
+alias ls="eza -a --color=always --group-directories-first --icons"
 alias grep="rg"
 
 # Jump between words with ctrl arrows keys
@@ -28,3 +32,4 @@ bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 
 alias hdf='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
