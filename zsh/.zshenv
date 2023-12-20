@@ -6,8 +6,7 @@ export BROWSER="firefox"
 # pfetch
 export PF_INFO="ascii title os kernel de shell uptime pkgs memory palette"
 
-# Wayland Firefox with KDE portal
-export MOZ_ENABLE_WAYLAND=1
+# Firefox to use KDE portal
 export GTK_USE_PORTAL=1
 
 
