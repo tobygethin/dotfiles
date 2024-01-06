@@ -3,21 +3,16 @@ pfetch
 
 # Colors and prompt:
 autoload -U colors && colors
-PROMPT='%B%F{cyan}%~ %F{green}$ '
+PROMPT='%F{green}%n@%m:%f%F{cyan}%~%f$ '
 
 # Save history in cache directory:
 HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.cache/zsh/history
 
-# Enable command completion:
+# Auto/tab complete
 autoload -U compinit && compinit -u
 zstyle ':completion:*' menu select
-
-# Auto complete with case insensitivity:
-zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
-
-# Load Zsh modules for command completion and initialize:
 zmodload zsh/complist
 compinit
 
@@ -30,4 +25,5 @@ alias grep="rg"
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 
-alias hdf='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+# ZSH syntax highlighting plugin
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
