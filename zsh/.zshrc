@@ -1,9 +1,8 @@
 # pfetch to flex
-pfetch
+fastfetch
 
-# Colors and prompt:
+# Colors :
 autoload -U colors && colors
-PROMPT='%F{green}%n@%m:%f%F{cyan}%~%f$ '
 
 # Save history in cache directory:
 HISTSIZE=1000
@@ -27,3 +26,6 @@ bindkey "^[[1;5D" backward-word
 
 # ZSH syntax highlighting plugin
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Starship Prompt
+eval "$(starship init zsh)"

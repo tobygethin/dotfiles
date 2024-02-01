@@ -1,0 +1,106 @@
+live_config_reload = true
+working_directory = "None"
+
+[bell]
+animation = "EaseOutExpo"
+color = "#ffffff"
+duration = 0
+
+[colors]
+draw_bold_text_with_bright_colors = false
+
+[colors.bright]
+black = "#36393d"
+blue = "#2e4bea"
+cyan = "#54d9ff"
+green = "#47c930"
+magenta = "#cc15ed"
+red = "#ce2727"
+white = "#dbdbdb"
+yellow = "#fff138"
+
+[colors.cursor]
+cursor = "#d8dee9"
+text = "#191919"
+
+[colors.dim]
+black = "#676f78"
+blue = "#707fd0"
+cyan = "#8adaf1"
+green = "#78a670"
+magenta = "#c583d0"
+red = "#b55454"
+white = "#e0e3e7"
+yellow = "#faf380"
+
+[colors.normal]
+black = "#191919"
+blue = "#314ad0"
+cyan = "#32d0fc"
+green = "#40a62f"
+magenta = "#b30ad0"
+red = "#b02626"
+white = "#acadb1"
+yellow = "#f2e635"
+
+[colors.primary]
+background = "#191919"
+foreground = "#d8dee9"
+
+[colors.selection]
+background = "#d8dee9"
+text = "#191919"
+
+[colors.vi_mode_cursor]
+cursor = "CellForeground"
+text = "CellBackground"
+
+[cursor]
+style = "Underline"
+unfocused_hollow = true
+vi_mode_style = "Block"
+
+[debug]
+log_level = "Warn"
+persistent_logging = false
+print_events = false
+render_timer = false
+
+[env]
+TERM = "alacritty"
+
+[font]
+size = 12
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+[font.normal]
+family = "JetBrains Mono"
+style = "Medium"
+
+[font.offset]
+x = -1
+y = -1
+
+[scrolling]
+history = 10000
+multiplier = 1
+
+[selection]
+save_to_clipboard = false
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+
+[window]
+dynamic_padding = false
+dynamic_title = true
+title = "Alacritty"
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
+
+[window.padding]
+x = 2
+y = 2

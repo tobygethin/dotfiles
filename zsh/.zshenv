@@ -3,9 +3,6 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 export BROWSER="firefox"
 
-# pfetch
-export PF_INFO="ascii title os kernel de shell uptime pkgs memory palette"
-
 # Firefox to use KDE portal
 export GTK_USE_PORTAL=1
 
